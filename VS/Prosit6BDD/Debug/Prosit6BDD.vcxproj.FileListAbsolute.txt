@@ -1,0 +1,6 @@
+D:\Documents\cours\A2\vs\Prosit6BDD\Debug\Prosit6BDD.vcxprojAssemblyReference.cache
+D:\Documents\cours\A2\vs\Prosit6BDD\Debug\Prosit6BDD.vcxproj.ResolveComReference.cache
+D:\Documents\cours\A2\vs\Prosit6BDD\Debug\Prosit6BDD.exe
+D:\Documents\cours\A2\vs\Prosit6BDD\Debug\Prosit6BDD.pdb
+D:\Documents\cours\A2\vs\Prosit6BDD\Debug\Prosit6BDD.MyForm.resources
+D:\Documents\cours\A2\vs\Prosit6BDD\Debug\Prosit6BDD.vcxproj.GenerateResource.cache
