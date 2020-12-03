@@ -4,3 +4,9 @@ D:\Documents\cours\A2\vs\Prosit6BDD\Debug\Prosit6BDD.exe
 D:\Documents\cours\A2\vs\Prosit6BDD\Debug\Prosit6BDD.pdb
 D:\Documents\cours\A2\vs\Prosit6BDD\Debug\Prosit6BDD.MyForm.resources
 D:\Documents\cours\A2\vs\Prosit6BDD\Debug\Prosit6BDD.vcxproj.GenerateResource.cache
+C:\Users\33676\Desktop\A2ProjetPoo-main\VS\Prosit6BDD\Debug\Prosit6BDD.vcxprojAssemblyReference.cache
+C:\Users\33676\Desktop\A2ProjetPoo-main\VS\Prosit6BDD\Debug\Prosit6BDD.vcxproj.ResolveComReference.cache
+C:\Users\33676\Desktop\A2ProjetPoo-main\VS\Prosit6BDD\Debug\Prosit6BDD.MyForm.resources
+C:\Users\33676\Desktop\A2ProjetPoo-main\VS\Prosit6BDD\Debug\Prosit6BDD.vcxproj.GenerateResource.cache
+C:\Users\33676\Desktop\A2ProjetPoo-main\VS\Prosit6BDD\Debug\Prosit6BDD.exe
+C:\Users\33676\Desktop\A2ProjetPoo-main\VS\Prosit6BDD\Debug\Prosit6BDD.pdb

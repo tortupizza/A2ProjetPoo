@@ -4,16 +4,11 @@
 CL_CAD::CL_CAD()
 {
 	String^ requeteSQL = "RIEN";
-	String^ connexion = "Data Source =DESKTOP-I4C3T6C;" +
-		"Initial Catalog =Projet;" +
-		"Integrated Security =True;" +
-		"Connect Timeout =30;" +
-		"Encrypt =False;" +
-		"TrustServerCertificate =False;" +
-		"ApplicationIntent =ReadWrite;" +
-		"MultiSubnetFailover = False;"
-		"User ID=DESKTOP-I4C3T6C\\tortupizza;" ;
-
+	String^ connexion = "Data Source=(localdb)\\MSSQLLocalDB;" +
+		"Initial Catalog=sequence0;" +
+		"Integrated Security=True;" +
+		"Pooling=False;" +
+		"USER ID = DESKTOP - M896LFS\\33676;";
 	connect = gcnew SqlConnection(connexion);
 }
 

@@ -1,0 +1,4 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2744,5): warning MSB3290: Impossible de créer l'assembly de wrappers pour la bibliothèque de types "{215d64d2-031c-33c7-96e3-61794cd1ee61}". La bibliothèque de types 'System_Windows_Forms' a été exportée d'un assembly CLR et ne peut pas être de nouveau importée en tant qu'assembly CLR.
+  MyForm.cpp
+  Adresse.obj : module MSIL détecté ; liens incrémentiels désactivés pour MSIL ; édition de liens complète en cours
+  Prosit6BDD.vcxproj -> C:\Users\33676\Desktop\A2ProjetPoo-main\VS\Prosit6BDD\x64\Debug\Prosit6BDD.exe

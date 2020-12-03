@@ -1,0 +1,6 @@
+C:\Users\33676\Desktop\A2ProjetPoo-main\VS\Prosit6BDD\x64\Debug\Prosit6BDD.vcxproj.ResolveComReference.cache
+C:\Users\33676\Desktop\A2ProjetPoo-main\VS\Prosit6BDD\x64\Debug\Prosit6BDD.MyForm.resources
+C:\Users\33676\Desktop\A2ProjetPoo-main\VS\Prosit6BDD\x64\Debug\Prosit6BDD.vcxproj.GenerateResource.cache
+C:\Users\33676\Desktop\A2ProjetPoo-main\VS\Prosit6BDD\x64\Debug\Prosit6BDD.exe
+C:\Users\33676\Desktop\A2ProjetPoo-main\VS\Prosit6BDD\x64\Debug\Prosit6BDD.pdb
+C:\Users\33676\Desktop\A2ProjetPoo-main\VS\Prosit6BDD\x64\Debug\Prosit6BDD.vcxprojAssemblyReference.cache
