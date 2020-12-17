@@ -66,10 +66,10 @@ void Factures::SetReference(int ID, String^ mot) {
     SetFact(entete6, ID, mot);
 }
 
-void Factures::ajouter(String^ nom, String^ Adresse, String^ NumServ, String^ logo, String^ IdClient, String^ reference)
+void Factures::ajouter(String^ IdClient, String^ reference)
 {
     CL_CAD BDD;
-    BDD.ajouter(table, entete1 + " , " + entete2 + " , " + entete3 + " , " + entete4 + " , " + entete5 + " , " + entete6, "'" + nom + "', '" + Adresse + "', '" + NumServ + "', '" + logo + "', '" + IdClient + "', '" + reference + "'");
+    BDD.ajouter(table, entete1 + " , " + entete2 + " , " + entete3 + " , " + entete4 + " , " + entete5 + " , " + entete6, "'Le futur', '17 avenue Fosh Paris', '18', 'woaw', '" + IdClient + "', '" + reference + "'");
 }
 
 int Factures::NbFactures(String^ enteteIdEtranger, int IdEtranger)

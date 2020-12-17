@@ -21,6 +21,7 @@ private:
 	String^ entete5 = "montant_total_HT";
 	String^ entete6 = "montant_total_TVA";
 	String^ entete7 = "montant_total_TTC";
+	String^ entete8 = "ID_Client";
 public:
 	DataSet^ getTable(String^ entete, int ID);
 	int NbCommandes(String^ enteteIdEtranger, int IdEtranger);
@@ -33,5 +34,5 @@ public:
 	void SetMontantHT(int ID, String^ mot);
 	void SetMontantTVA(int ID, String^ mot);
 	void SetMontantTTC(int ID, String^ mot);
-	void ajouter(String^ date_de_livraison, String^ date_de_commande, String^ date_d_emission, String^ nb_d_article, String^ montant_HT);
+	void ajouter(String^ date_de_livraison, String^ date_de_commande, String^ date_d_emission, String^ nb_d_article, String^ montant_HT, String^ ID_Client);
 };

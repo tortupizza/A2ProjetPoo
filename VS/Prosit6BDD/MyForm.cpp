@@ -32,10 +32,12 @@ void Prosit6BDD::MyForm::afficher()
 	DgvFactures->DataSource = factures.getTable("ID_client", Convert::ToInt32(textBox1->Text));
 	DgvFactures->DataMember = "facture_ID";
 	DgvFactures->Columns["ID"]->Visible = false;
+	//DgvFactures->Columns["ID_Client"]->Visible = false;
 	Commande commande;
 	DgvCommande->Columns->Clear();
-	DgvCommande->DataSource = commande.getTable("reference", factures.getReference(Convert::ToInt32(textBox1->Text)));
+	DgvCommande->DataSource = commande.getTable("ID_Client", Convert::ToInt32(textBox1->Text));
 	DgvCommande->DataMember = "Commande_ID";
+	DgvFactures->Columns["ID_Client"]->Visible = false;
 
 }
 
@@ -57,9 +59,11 @@ void Prosit6BDD::MyForm::afficher(int ID)
 	DgvFactures->DataSource = factures.getTable("ID_client", Convert::ToInt32(textBox1->Text));
 	DgvFactures->DataMember = "facture_ID";
 	DgvFactures->Columns["ID"]->Visible = false;
+	//DgvFactures->Columns["ID_Client"]->Visible = false;
 	Commande commande;
 	DgvCommande->Columns->Clear();
-	DgvCommande->DataSource = commande.getTable("reference", factures.getReference(Convert::ToInt32(textBox1->Text)));
+	DgvCommande->DataSource = commande.getTable("ID_Client", Convert::ToInt32(textBox1->Text));
 	DgvCommande->DataMember = "Commande_ID";
+	DgvFactures->Columns["ID_Client"]->Visible = false;
 
 }

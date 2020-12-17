@@ -31,5 +31,5 @@ public:
 	void SetLogo(int ID, String^ mot);
 	void SetIdClient(int ID, String^ mot);
 	void SetReference(int ID, String^ mot);
-	void ajouter(String^ nom, String^ Adresse, String^ NumServ,String^ logo, String^ IdClient, String^ reference);
+	void ajouter(String^ IdClient, String^ reference);
 };

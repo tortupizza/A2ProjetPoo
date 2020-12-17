@@ -2,6 +2,7 @@
 #include "CL_CAD.h"
 #include "personne.h"
 #include "Adresse.h"
+#include "Commande.h"
 #include <iostream>
 
 namespace Prosit6BDD {
@@ -275,6 +276,7 @@ namespace Prosit6BDD {
 			this->DgvFactures->Name = L"DgvFactures";
 			this->DgvFactures->Size = System::Drawing::Size(645, 133);
 			this->DgvFactures->TabIndex = 18;
+			
 			// 
 			// label6
 			// 
@@ -301,6 +303,7 @@ namespace Prosit6BDD {
 			this->DgvCommande->Name = L"DgvCommande";
 			this->DgvCommande->Size = System::Drawing::Size(645, 133);
 			this->DgvCommande->TabIndex = 21;
+			//this->DgvCommande->CellEndEdit += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &MyForm::CommandeTable_CellEndEdit);
 			// 
 			// label8
 			// 
@@ -418,7 +421,7 @@ namespace Prosit6BDD {
 			}else{
 				int ID_personne = Convert::ToInt32(textBox1->Text);
 				if (e->RowIndex < adresse.NbAdresse("Id_Client",ID_personne)) {
-					int k = adresse.NbAdresse("Id_Client", ID_personne);
+
 					int ID = Convert::ToInt32(AdresseTable->Rows[e->RowIndex]->Cells[0]->Value->ToString());
 					String^ modifier = AdresseTable->Rows[e->RowIndex]->Cells[e->ColumnIndex]->Value->ToString();
 					if (e->ColumnIndex == 1) {
@@ -445,7 +448,63 @@ namespace Prosit6BDD {
 			// Clear the row error in case the user presses ESC.   
 			//dataGridView1.Rows[e.RowIndex].ErrorText = String.Empty;
 		}
+		/*
+		void CommandeTable_CellEndEdit(System::Object^ sender, DataGridViewCellEventArgs^ e)
+		{
+			
+			Commande commande;
+			if (e->ColumnIndex == 0) {
+				MessageBox::Show("Vous ne pouvez pas modifier la référence");
+			}
+			else {
+				int ID_personne = Convert::ToInt32(textBox1->Text);
+				if (e->RowIndex < commande.NbCommandes("ID_Client", ID_personne)) {
 
+					int ID = Convert::ToInt32(AdresseTable->Rows[e->RowIndex]->Cells[0]->Value->ToString());
+					String^ modifier = DgvCommande->Rows[e->RowIndex]->Cells[e->ColumnIndex]->Value->ToString();
+					if (e->ColumnIndex == 1) {
+						commande.SetDateLiv(ID, modifier);
+					}
+					else if (e->ColumnIndex == 2) {
+						commande.SetDateCom(ID, modifier);
+					}
+					else if (e->ColumnIndex == 3) {
+						commande.SetDateEmi(ID, modifier);
+					}
+					else if (e->ColumnIndex == 4) {
+						commande.SetNbArt(ID, modifier);
+					}
+					else if (e->ColumnIndex == 5) {
+						commande.SetMontantHT(ID, modifier);
+					}
+					else if (e->ColumnIndex == 6) {
+						commande.SetMontantTVA(ID, modifier);
+					}
+					else if (e->ColumnIndex == 7) {
+						commande.SetMontantTTC(ID, modifier);
+					}
+					else {
+						MessageBox::Show("Vous ne pouvez pas modifier cette colonne");
+					}
+				}
+				else {
+
+					String^ Liv = AdresseTable->Rows[e->RowIndex]->Cells[1]->Value->ToString();
+					String^ Com = AdresseTable->Rows[e->RowIndex]->Cells[2]->Value->ToString();
+					String^ Emi = AdresseTable->Rows[e->RowIndex]->Cells[3]->Value->ToString();
+					String^ NbArt = AdresseTable->Rows[e->RowIndex]->Cells[4]->Value->ToString();
+					String^ HT = AdresseTable->Rows[e->RowIndex]->Cells[5]->Value->ToString();
+					String^ TVA = AdresseTable->Rows[e->RowIndex]->Cells[6]->Value->ToString();
+					String^ TTC = AdresseTable->Rows[e->RowIndex]->Cells[7]->Value->ToString();
+
+					commande.ajouter(Liv, Com, Emi, NbArt, HT,Convert::ToString(ID_personne));
+				}
+			}
+			afficher();
+			
+			// Clear the row error in case the user presses ESC.   
+			//dataGridView1.Rows[e.RowIndex].ErrorText = String.Empty;
+		}*/
 
 };
 }
