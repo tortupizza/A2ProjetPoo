@@ -34,5 +34,6 @@ public:
 	void SetMontantHT(int ID, String^ mot);
 	void SetMontantTVA(int ID, String^ mot);
 	void SetMontantTTC(int ID, String^ mot);
+	void SetIdClient(int ID, String^ mot);
 	void ajouter(String^ date_de_livraison, String^ date_de_commande, String^ date_d_emission, String^ nb_d_article, String^ montant_HT, String^ ID_Client);
 };
