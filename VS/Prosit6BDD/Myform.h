@@ -2,7 +2,7 @@
 //#include "Menu_Personnels.h"
 //#include "Menu_Statistiques.h"
 //#include "Menu_Stock.h"
-#include "Menu_Client.h"
+#include "MenuClient.h"
 
 namespace ProjetPOO {
 
@@ -78,7 +78,7 @@ namespace ProjetPOO {
 			this->Personnels->TabIndex = 0;
 			this->Personnels->Text = L"Personnels";
 			this->Personnels->UseVisualStyleBackColor = true;
-			this->Personnels->Click += gcnew System::EventHandler(this, &Menu_Principal::Personnels_Click);
+			//this->Personnels->Click += gcnew System::EventHandler(this, &Menu_Principal::Personnels_Click);
 			// 
 			// Clients
 			// 
@@ -98,7 +98,7 @@ namespace ProjetPOO {
 			this->Articles->TabIndex = 2;
 			this->Articles->Text = L"Articles";
 			this->Articles->UseVisualStyleBackColor = true;
-			this->Articles->Click += gcnew System::EventHandler(this, &Menu_Principal::Articles_Click);
+			//this->Articles->Click += gcnew System::EventHandler(this, &Menu_Principal::Articles_Click);
 			// 
 			// Commandes
 			// 
@@ -108,7 +108,7 @@ namespace ProjetPOO {
 			this->Commandes->TabIndex = 3;
 			this->Commandes->Text = L"Commandes";
 			this->Commandes->UseVisualStyleBackColor = true;
-			this->Commandes->Click += gcnew System::EventHandler(this, &Menu_Principal::Commandes_Click);
+			//this->Commandes->Click += gcnew System::EventHandler(this, &Menu_Principal::Commandes_Click);
 			// 
 			// Statistiques
 			// 
@@ -118,7 +118,7 @@ namespace ProjetPOO {
 			this->Statistiques->TabIndex = 5;
 			this->Statistiques->Text = L"Statistiques";
 			this->Statistiques->UseVisualStyleBackColor = true;
-			this->Statistiques->Click += gcnew System::EventHandler(this, &Menu_Principal::Statistiques_Click);
+			//this->Statistiques->Click += gcnew System::EventHandler(this, &Menu_Principal::Statistiques_Click);
 			// 
 			// Menu_Principal
 			// 
@@ -136,10 +136,10 @@ namespace ProjetPOO {
 
 		}
 #pragma endregion
-	private: System::Void Personnels_Click(System::Object^ sender, System::EventArgs^ e) {
+	/*private: System::Void Personnels_Click(System::Object^ sender, System::EventArgs^ e) {
 		Menu_Personnels^ Personnels = gcnew Menu_Personnels();
 		Personnels->Show();
-	}
+}
 	private: System::Void Statistiques_Click(System::Object^ sender, System::EventArgs^ e) {
 		Menu_Statistiques^ Statistiques = gcnew Menu_Statistiques();
 		Statistiques->Show();
@@ -147,16 +147,16 @@ namespace ProjetPOO {
 private: System::Void Articles_Click(System::Object^ sender, System::EventArgs^ e) {
 	Menu_Stock^ Stock = gcnew Menu_Stock();
 	Stock->Show();
-}
+}*/
 private: System::Void Clients_Click(System::Object^ sender, System::EventArgs^ e) {
 	Menu_Client^ Client = gcnew Menu_Client();
 	Client->Show();
 
-}
+}/*
 private: System::Void Commandes_Click(System::Object^ sender, System::EventArgs^ e) {
 	Menu_Commande^ Commande = gcnew Menu_Commande();
 	Commande->Show();
-}
+}*/
 };
 }
 

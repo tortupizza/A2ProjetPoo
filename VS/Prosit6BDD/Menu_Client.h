@@ -15,9 +15,9 @@ namespace Prosit6BDD {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Description résumée de MyForm
+	/// Description résumée de Menu_Client
 	/// </summary>
-	public ref class MyForm : public System::Windows::Forms::Form
+	public ref class Menu_Client : public System::Windows::Forms::Form
 	{
 	private: int NBligne;
 	private: System::Windows::Forms::DataGridView^ AdresseTable;
@@ -35,7 +35,7 @@ namespace Prosit6BDD {
 
 		   CL_CAD BDD;
 	public:
-		MyForm(void)
+		Menu_Client(void)
 		{
 			InitializeComponent();
 			//
@@ -51,7 +51,7 @@ namespace Prosit6BDD {
 		/// <summary>
 		/// Nettoyage des ressources utilisées.
 		/// </summary>
-		~MyForm()
+		~Menu_Client()
 		{
 			if (components)
 			{
@@ -128,7 +128,7 @@ namespace Prosit6BDD {
 			this->btnAfficher->TabIndex = 0;
 			this->btnAfficher->Text = L"Afficher";
 			this->btnAfficher->UseVisualStyleBackColor = true;
-			this->btnAfficher->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
+			this->btnAfficher->Click += gcnew System::EventHandler(this, &Menu_Client::button1_Click);
 			// 
 			// textBox1
 			// 
@@ -186,7 +186,7 @@ namespace Prosit6BDD {
 			this->button3->TabIndex = 8;
 			this->button3->Text = L"<";
 			this->button3->UseVisualStyleBackColor = true;
-			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
+			this->button3->Click += gcnew System::EventHandler(this, &Menu_Client::button3_Click);
 			// 
 			// button4
 			// 
@@ -196,7 +196,7 @@ namespace Prosit6BDD {
 			this->button4->TabIndex = 9;
 			this->button4->Text = L">";
 			this->button4->UseVisualStyleBackColor = true;
-			this->button4->Click += gcnew System::EventHandler(this, &MyForm::button4_Click);
+			this->button4->Click += gcnew System::EventHandler(this, &Menu_Client::button4_Click);
 			// 
 			// btnAjouter
 			// 
@@ -206,7 +206,7 @@ namespace Prosit6BDD {
 			this->btnAjouter->TabIndex = 10;
 			this->btnAjouter->Text = L"Ajouter";
 			this->btnAjouter->UseVisualStyleBackColor = true;
-			this->btnAjouter->Click += gcnew System::EventHandler(this, &MyForm::button5_Click);
+			this->btnAjouter->Click += gcnew System::EventHandler(this, &Menu_Client::button5_Click);
 			// 
 			// button6
 			// 
@@ -216,7 +216,7 @@ namespace Prosit6BDD {
 			this->button6->TabIndex = 11;
 			this->button6->Text = L"Supprimer";
 			this->button6->UseVisualStyleBackColor = true;
-			this->button6->Click += gcnew System::EventHandler(this, &MyForm::button6_Click);
+			this->button6->Click += gcnew System::EventHandler(this, &Menu_Client::button6_Click);
 			// 
 			// button2
 			// 
@@ -226,7 +226,7 @@ namespace Prosit6BDD {
 			this->button2->TabIndex = 12;
 			this->button2->Text = L"Modifier";
 			this->button2->UseVisualStyleBackColor = true;
-			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click_1);
+			this->button2->Click += gcnew System::EventHandler(this, &Menu_Client::button2_Click_1);
 			// 
 			// AdresseTable
 			// 
@@ -235,7 +235,7 @@ namespace Prosit6BDD {
 			this->AdresseTable->Name = L"AdresseTable";
 			this->AdresseTable->Size = System::Drawing::Size(375, 145);
 			this->AdresseTable->TabIndex = 13;
-			this->AdresseTable->CellEndEdit += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &MyForm::AdresseTable_CellEndEdit);
+			this->AdresseTable->CellEndEdit += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &Menu_Client::AdresseTable_CellEndEdit);
 			// 
 			// label4
 			// 
@@ -303,7 +303,7 @@ namespace Prosit6BDD {
 			this->DgvCommande->Name = L"DgvCommande";
 			this->DgvCommande->Size = System::Drawing::Size(645, 133);
 			this->DgvCommande->TabIndex = 21;
-			this->DgvCommande->CellEndEdit += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &MyForm::CommandeTable_CellEndEdit);
+			this->DgvCommande->CellEndEdit += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &Menu_Client::CommandeTable_CellEndEdit);
 			// 
 			// label8
 			// 
@@ -314,7 +314,7 @@ namespace Prosit6BDD {
 			this->label8->TabIndex = 22;
 			this->label8->Text = L"Commande";
 			// 
-			// MyForm
+			// Menu_Client
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
@@ -341,8 +341,8 @@ namespace Prosit6BDD {
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->btnAfficher);
-			this->Name = L"MyForm";
-			this->Text = L"MyForm";
+			this->Name = L"Menu_Client";
+			this->Text = L"Menu_Client";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->AdresseTable))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->DgvFactures))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->DgvCommande))->EndInit();
